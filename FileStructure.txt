@@ -1,0 +1,36 @@
+game_cfg_bot/
+├── src/
+│   ├── __init__.py
+│   ├── main.py                    # Главный файл запуска бота
+│   ├── bot/
+│   │   ├── __init__.py
+│   │   ├── commands.py            # Общие команды бота
+│   │   ├── controllers/           # Папка с контроллерами для игр
+│   │   │   ├── __init__.py
+│   │   │   ├── cs2_controller.py  # Контроллер для CS 2
+│   │   │   └── pubg_controller.py # Контроллер для PUBG
+│   ├── database/
+│   │   ├── __init__.py
+│   │   ├── models.py              # Определения моделей БД
+│   │   └── db_connection.py       # Логика подключения к БД
+│   ├── utils/
+│   │   ├── __init__.py
+│   │   ├── file_manager.py        # Управление файлами и шаблонами
+│   │   └── script_generator.py    # Генерация скриптов на основе шаблонов
+│   ├── templates/
+│   │   ├── cs2/
+│   │   │   ├── settings_template.json   # Шаблон настроек для CS 2
+│   │   │   └── system_settings_template.json # Шаблон системных настроек
+│   │   ├── pubg/
+│   │   │   ├── settings_template.json   # Шаблон настроек для PUBG
+│   │   │   └── system_settings_template.json # Шаблон системных настроек
+├── tests/
+│   ├── __init__.py
+│   ├── test_bot.py                # Тесты для бота
+│   ├── test_controllers.py        # Тесты для контроллеров игр
+│   └── test_utils.py              # Тесты для утилит
+├── .gitignore
+├── docker-compose.yml             # Конфигурация Docker Compose
+├── Dockerfile                     # Dockerfile для контейнера бота
+├── README.md                      # Описание проекта
+└── requirements.txt               # Список зависимостей

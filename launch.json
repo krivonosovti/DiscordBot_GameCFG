@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: main.py",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/main.py",
+            "envFile": "${workspaceFolder}/.env",
+            "console": "integratedTerminal"
+        }
+    ],
+
+    "python.linting.pylintEnabled": true,
+    "python.formatting.autopep8Args": ["--max-line-length=8"],
+    "editor.formatOnSave": true
+}
